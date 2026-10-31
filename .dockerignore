@@ -1,0 +1,10 @@
+.git
+.env
+.env.*
+__pycache__
+*.pyc
+*.zip
+dist
+docs/screenshots
+
+.local-editor/
