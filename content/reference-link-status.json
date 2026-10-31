@@ -1,0 +1,51 @@
+[
+  {
+    "url": "http://cushmanlab.fas.harvard.edu/docs/Schweinsberg_et_al_2015.pdf",
+    "status": 404,
+    "reason": "HTTP Error 404: Not Found",
+    "checked_at": "2026-10-30",
+    "retried": false
+  },
+  {
+    "url": "http://journal.sjdm.org/15/15129/jdm15129.pdf",
+    "status": null,
+    "reason": "<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>",
+    "checked_at": "2026-10-30",
+    "retried": false
+  },
+  {
+    "url": "http://pss.sagepub.com/content/early/2016/01/14/0956797615619200.full.pdf+html",
+    "status": 403,
+    "reason": "HTTP Error 403: Forbidden",
+    "checked_at": "2026-10-30",
+    "retried": false
+  },
+  {
+    "url": "http://www.decisionsciencenews.com/sjdm/journal.sjdm.org/15/15129/jdm15129.pdf",
+    "status": 404,
+    "reason": "HTTP Error 404: Not Found",
+    "checked_at": "2026-10-30",
+    "retried": false
+  },
+  {
+    "url": "https://static1.squarespace.com/static/52be2693e4b0697bbec87ab3/t/5a2b10b70d92975c5d54d90d/1512771769019/Kim+2017+JEPG+power+and+trust.pdf",
+    "status": 404,
+    "reason": "HTTP Error 404: Not Found",
+    "checked_at": "2026-10-30",
+    "retried": false
+  },
+  {
+    "url": "https://www.aclu.org/wp-content/uploads/legal-documents/1998-Journal-of-Personality-and-Social-Psychology-Ego-Depletion-Is-the-Active-Self-a-Limited-Resource.pdf",
+    "status": 404,
+    "reason": "HTTP Error 404: Not Found",
+    "checked_at": "2026-10-30",
+    "retried": false
+  },
+  {
+    "url": "https://www.researchgate.net/profile/Dejun-Tony-Kong/publication/282185503_Strategic_Consequences_of_Emotional_Misrepresentation_in_Negotiation_The_Blowback_Effect/links/5a1ebdfc0f7e9b9d5e000fa3/Strategic-Consequences-of-Emotional-Misrepresentation-in-Negotiation-The-Blowback-Effect.pdf",
+    "status": 403,
+    "reason": "HTTP Error 403: Forbidden",
+    "checked_at": "2026-10-30",
+    "retried": false
+  }
+]

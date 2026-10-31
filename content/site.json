@@ -1,0 +1,36 @@
+{
+  "name": "Alexandra Mislin",
+  "description": "Research, teaching, and practical ideas about trust, negotiation, and collaboration at work.",
+  "canonical_origin": "https://www.alexandramislin.com",
+  "email": "mislin@american.edu",
+  "portrait": "/assets/images/alexandra-mislin-portrait.png",
+  "contact_portrait": "/assets/images/alexandra-mislin-contact.png",
+  "workwell_banner": "/assets/images/workwell-diplomacy-banner.jpg",
+  "cv": "/assets/documents/mislin-cv-april-2026.pdf",
+  "navigation": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Research",
+      "path": "/research/"
+    },
+    {
+      "label": "WorkWell Diplomacy",
+      "path": "/workwell-diplomacy/"
+    },
+    {
+      "label": "Teaching",
+      "path": "/about/"
+    },
+    {
+      "label": "Press",
+      "path": "/press/"
+    },
+    {
+      "label": "Contact",
+      "path": "/contact/"
+    }
+  ]
+}
