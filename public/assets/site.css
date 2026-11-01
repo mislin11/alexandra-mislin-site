@@ -11,3 +11,6 @@
 /* Keep Press list entries compact while retaining section-heading spacing. */
 .press .right-column li{margin-bottom:14px}
 .press .right-column li>p{margin:0}
+
+/* Subtle homepage-only portrait contrast; the original photograph stays unchanged. */
+.home-portrait img{filter:contrast(1.08) saturate(1.05) brightness(.98)}
