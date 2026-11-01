@@ -42,7 +42,7 @@ def layout(title,body,path,kind='',description=None,noindex=False,extra_head='')
 <script src="/assets/site.js" defer></script>'''+extra_head+'''</head>
 <body><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><a class="site-title" href="/">'''+esc(site['name'])+'''</a>'''+navigation(path)+navigation(path,True)+'''</header>
 <main id="main" class="'''+esc(kind)+'''">'''+body+'''</main>
-<footer class="site-footer"><span>© Alexandra Mislin</span><a href="/reference-links/">Reference link notes</a></footer></div></body></html>'''
+<footer class="site-footer"><span>© Alexandra Mislin</span></footer></div></body></html>'''
 def write(path,title,body,kind='',**kw):
  p=DIST/path.lstrip('/')/'index.html';p.parent.mkdir(parents=True,exist_ok=True);p.write_text(layout(title,body,path,kind,**kw));routes[path]={'file':str(p.relative_to(DIST)),'title':title,'kind':kind}
 def redirect(path,target,reason):
@@ -54,6 +54,7 @@ write('/research/','Research','<h1 class="visually-hidden">Research</h1>'+read('
 write('/about/','Teaching','<h1 class="visually-hidden">Teaching</h1>'+read('teaching'),'teaching editorial')
 write('/press/','Press','<div class="side-column-spacer" aria-hidden="true"></div><article class="right-column">'+mainheading(read('press'),'Press')+'</article>','sidebar-layout press')
 write('/contact/','Contact','<aside class="contact-portrait"><img src="'+site['contact_portrait']+'" alt="Alexandra Mislin" width="294" height="295"></aside><article class="right-column">'+mainheading(read('contact'),'Contact')+'</article>','sidebar-layout contact')
+write('/speaking-workshops/','Speaking & Workshops',read('speaking-workshops'),'post editorial',description='I give talks and workshops on everyday negotiation, building trust, and gaining influence in complex organizational and social settings.')
 # All published posts retain their original paths and millisecond publication timestamps.
 for p in posts:
  schema={'@context':'https://schema.org','@type':'BlogPosting','headline':p['title'],'datePublished':p['published_at'],'dateModified':p['updated_at'],'author':{'@type':'Person','name':p['author']},'mainEntityOfPage':origin+p['slug']}
@@ -91,12 +92,6 @@ legacy_pdf='/s/1-June-CNMC-Hospital-Grand-Rounds-flyer-Mislin.pdf';dest=DIST/leg
 redirect('/home/','/','Original homepage alias')
 redirect('/teaching/','/about/','Helpful teaching alias; original /about route remains canonical')
 redirect('/read-me-om/','/','Squarespace template documentation excluded from the public rebuild; original preserved in backup')
-# Original source failures stay truthful. No paper is substituted and no denied retrieval is retried.
-gaps=json.loads((CONTENT/'reference-link-status.json').read_text());li=[]
-for g in gaps:
- label='HTTP '+str(g['status']) if g['status'] else 'TLS connection failure'
- title=unquote(urlsplit(g['url']).path.rsplit('/',1)[-1]);li.append('<li><a href="'+esc(g['url'])+'">'+esc(title)+'</a><br><small>'+label+' recorded on 30 October 2026.</small></li>')
-write('/reference-links/','Reference link notes','<h1>Reference link notes</h1><p>Some original links to external papers were unavailable when this site was backed up on 30 October 2026. Their original targets are retained below. A missing or access-limited download does not change the cited research.</p><ul class="reference-links">'+''.join(li)+'</ul><p>For help locating a paper, contact <a href="mailto:'+esc(site['email'])+'">'+esc(site['email'])+'</a>.</p>','editorial',noindex=True)
 # Host-neutral redirect plan; HTML fallbacks already work on a plain static server.
 (DIST/'_redirects').write_text('\n'.join(x['from']+' '+x['to']+' 301' for x in redirects)+'\n')
 if not os.environ.get('SITE_EDITOR_BUILD'):(ROOT/'docs/redirects.json').write_text(json.dumps(redirects,indent=2))
@@ -105,7 +100,7 @@ if not os.environ.get('SITE_EDITOR_BUILD'):(ROOT/'docs/redirects.json').write_te
 # Portable discoverability files; no external build service is involved.
 sitemap=ET.Element('urlset',xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
 for path,r in routes.items():
- if r['kind'] in ('blog-filter',) or path in [x['from'] for x in redirects] or path=='/reference-links/':continue
+ if r['kind'] in ('blog-filter',) or path in [x['from'] for x in redirects]:continue
  item=ET.SubElement(sitemap,'url');ET.SubElement(item,'loc').text=origin+quote(path,safe='/+');
 (DIST/'sitemap.xml').write_bytes(ET.tostring(sitemap,encoding='utf-8',xml_declaration=True))
 (DIST/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+origin+'/sitemap.xml\n')
