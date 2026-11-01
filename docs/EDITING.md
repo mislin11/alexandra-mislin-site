@@ -42,7 +42,7 @@ Saved content lives in the source files on this Mac. History lives in the privat
 
 ## What Save means
 
-**Save & Preview changes only your local working copy.** Your live Squarespace website stays unchanged. Nothing is uploaded to GitHub, Railway or a host. A future publish workflow must be selected and approved separately. Only `dist/` is public static output; never serve the project root or the private editor on a public host.
+**Save & Preview changes only your local working copy.** Nothing is uploaded or committed by the editor. The published site is https://mislin11.github.io/alexandra-mislin-site/ . Commits to the GitHub repository’s `main` branch run a checked build and update GitHub Pages. Ask for help publishing your chosen saved edits. Private draft files, backups and `.local-editor/` must stay out of the public repository and its history. The draft checkbox controls local preview/build inclusion; it does not make committed GitHub source private. Only `dist/` is deployed; the editor service and local history are excluded.
 
 The editor is restricted to this Mac's loopback interface. It deliberately has no remote login. The mobile layout was checked at 390 pixels for responsive usability; it does not make the service reachable from your phone.
 
