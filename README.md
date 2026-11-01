@@ -2,7 +2,7 @@
 
 This is a local, GitHub-ready rebuild of Alexandra's personal website. It keeps the white layout, narrow uppercase name, quiet navigation, portrait, text columns and WorkWell Diplomacy article layout close to the verified Squarespace screenshots.
 
-**Source repository: [mislin11/alexandra-mislin-site](https://github.com/mislin11/alexandra-mislin-site).** This transfer does not publish the website. Hosting and domain configuration remain separate. The original two-site backup is separate and unchanged.
+**Live website: [mislin11.github.io/alexandra-mislin-site](https://mislin11.github.io/alexandra-mislin-site/).** [Source repository](https://github.com/mislin11/alexandra-mislin-site). The custom domain has not been connected yet. The original backup remains separate and unchanged.
 
 ## Open your editor on this Mac
 
@@ -14,7 +14,7 @@ Double-click **Open Website Editor.app** inside this folder. Keep the app in thi
 
 The editor normally opens at **http://127.0.0.1:8767/editor/**. If that port is in use, the app chooses another local port and opens the right address. Reopening the app reuses this project's running editor. Closing the browser does not delete or stop the local server; reopen the app to return.
 
-**Saving stays on this Mac. It does not publish, push to GitHub or update Squarespace.** Publishing will be a separate, explicitly approved step after a host is chosen. The existing view-only preview at port 8766 can continue alongside the editor.
+**Saving stays on this Mac. It does not publish, push to GitHub or update Squarespace.** Publishing is a separate step: commits to the GitHub repository’s `main` branch run the checked Pages build. The local editor does not upload or commit files. The existing view-only preview at port 8766 can continue alongside the editor.
 
 There is a rich text toolbar for paragraphs, headings, bold, italic, lists and links; title, publication date and summary fields for articles; and a PDF chooser for replacing the CV. Original article addresses stay stable. New articles begin as private drafts. Every successful save keeps a recoverable previous version in **History**; **Cancel changes** discards only unsaved edits. Browser draft recovery helps if a tab reloads before saving.
 
@@ -30,11 +30,13 @@ python3 tools/serve.py
 
 The built static website is in `dist/`. Do not edit it directly: builds replace it. Keep the editable `content/`, `public/`, `tools/`, `editor/` and app together. The private `.local-editor/` directory holds local save history and is excluded from Git, archives and the hosting container. Back up your working project folder separately if you need that history retained elsewhere.
 
-## Move it later
+## Publishing and portability
 
-This repository holds the editable source; `dist/` is generated and ignored by Git. A host needs either a Python build command (`python3 tools/build.py`) and the resulting static `dist/` folder, or the included optional container recipe. The preview server honors `PORT` and can bind `0.0.0.0` if a container host such as Railway is later selected. No Railway account connection or deployment has been made.
+This repository holds the editable source. `.github/workflows/pages.yml` builds it with Python and checks the current links and assets, then publishes only the generated `dist/` folder to GitHub Pages. The local editor, its write service and its private history are excluded from the public website runtime.
 
-The site is an academic personal portfolio of research, teaching, press and personal writing. Public source and GitHub Pages publication are authorized. The repository contains only this academic site; domain configuration remains separate. The Dockerfile is an optional starting point and was not container-tested here.
+After making and previewing local edits, ask for help publishing the selected changes to GitHub. Do not commit private drafts, `.local-editor/`, backups or account information: repository source and commit history are public. The editor's draft checkbox controls local preview/build inclusion and does not make GitHub source private.
+
+The standard-library builder remains portable to other static hosts. It needs no packages, database or paid build service. The optional container recipe remains available but is not used for GitHub Pages. No Railway service or costs were created. Domain configuration is a separate coordinated step.
 
 ## What was preserved and what needs review
 
