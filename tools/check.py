@@ -65,7 +65,7 @@ for p in baseline['posts']:
  page=target(p['slug']).read_text()
  expected_date=p['published_at'] if args.strict_migration else (meta or p)['published_at']
  if '"datePublished": "'+expected_date+'"' not in page:errors.append('Missing publication date schema '+p['slug'])
-# Public failures are recorded, not silently replaced.
+# Historical download failures stay in maintenance documentation; original citations remain public.
 gaps=json.loads((ROOT/'content/reference-link-status.json').read_text());assert len(gaps)==7
 for gap in gaps:
  if gap['url'] not in [v for _,v,_ in links]:errors.append('Original inaccessible reference disappeared '+gap['url'])
