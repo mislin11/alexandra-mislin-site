@@ -14,6 +14,7 @@ PAGES={
  'teaching':('Teaching','/about/'),
  'press':('Press','/press/'),
  'contact':('Contact','/contact/'),
+ 'speaking-workshops':('Speaking & Workshops','/speaking-workshops/'),
  'workwell-introduction':('WorkWell — introduction','/workwell-diplomacy/')}
 NEWS='content/pages/home-news.html';CV='public/assets/documents/mislin-cv-april-2026.pdf';LOCK=threading.RLock();RESULTS={};TOKEN=secrets.token_urlsafe(32)
 LEGACY=set(json.loads((CONTENT/'legacy-routes.json').read_text()));PROJECT=hashlib.sha256(str(ROOT).encode()).hexdigest()[:20]
