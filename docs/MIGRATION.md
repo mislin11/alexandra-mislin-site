@@ -21,7 +21,7 @@ The original desktop screenshots guided the 950px page width, 294px portrait, ap
 
 ## Link gaps
 
-The seven inaccessible paper downloads are recorded in `content/reference-link-status.json` and the generated `/reference-links/` page. Four returned 404, two 403, and one failed TLS. No denied download was retried and no paper was silently substituted. External links are inventoried in `external-links.csv`; those not already known to fail were not freshly revalidated online. The old malformed Conflict Resolution Center of Montgomery County URL is plain readable text, pending a real target from the author.
+The seven inaccessible paper downloads are recorded only in maintenance documentation at `content/reference-link-status.json`. The former public reference-notes page and footer link were removed on 1 November 2026; original research citations remain unchanged. Four returned 404, two 403, and one failed TLS. No denied download was retried and no paper was silently substituted. External links are inventoried in `external-links.csv`; those not already known to fail were not freshly revalidated online. The old malformed Conflict Resolution Center of Montgomery County URL is plain readable text, pending a real target from the author.
 
 ## Remaining choices
 
