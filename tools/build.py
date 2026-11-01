@@ -4,12 +4,13 @@ from pathlib import Path
 from datetime import datetime,timezone
 from urllib.parse import quote,urlsplit,unquote
 from html.parser import HTMLParser
-import json,re,html,shutil,os,xml.etree.ElementTree as ET
+import json,re,html,shutil,os,hashlib,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1];CONTENT=ROOT/'content';DIST=Path(os.environ.get('SITE_OUTPUT_DIR',str(ROOT/'dist'))).resolve()
 if DIST!=ROOT/'dist' and ROOT/'.local-editor/builds' not in DIST.parents:raise SystemExit('Build output must be dist/ or an editor staging folder.')
 site=json.loads((CONTENT/'site.json').read_text());base=os.environ.get('SITE_BASE_PATH','').rstrip('/')
 if base and not re.fullmatch(r'/[A-Za-z0-9_-]+',base):raise SystemExit('Invalid site base path.')
 origin=os.environ.get('SITE_ORIGIN',site['canonical_origin']).rstrip('/')+base
+style_version=hashlib.sha256((ROOT/'public/assets/site.css').read_bytes()).hexdigest()[:12]
 # dist/ is generated output owned by this build; editable source is never removed.
 if DIST.exists():shutil.rmtree(DIST)
 shutil.copytree(ROOT/'public',DIST)
@@ -40,7 +41,7 @@ def layout(title,body,path,kind='',description=None,noindex=False,extra_head='')
 <title>'''+esc(title if path=='/' else title+' — '+site['name'])+'''</title><meta name="description" content="'''+esc(description)+'''">
 <link rel="canonical" href="'''+esc(canonical)+'''"><meta property="og:title" content="'''+esc(title)+'''"><meta property="og:description" content="'''+esc(description)+'''"><meta property="og:type" content="website"><meta property="og:url" content="'''+esc(canonical)+'''"><meta property="og:image" content="'''+esc(origin+site['portrait'])+'''">
 '''+('<meta name="robots" content="noindex,follow">' if noindex else '')+'''<link rel="alternate" type="application/rss+xml" title="WorkWell Diplomacy" href="/feed.xml">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css"><link rel="preload" as="font" type="font/woff2" href="/assets/fonts/source-sans-3-roman.woff2" crossorigin>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v='''+style_version+'''"><link rel="preload" as="font" type="font/woff2" href="/assets/fonts/source-sans-3-roman.woff2" crossorigin>
 <script src="/assets/site.js" defer></script>'''+extra_head+'''</head>
 <body><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><a class="site-title" href="/">'''+esc(site['name'])+'''</a>'''+navigation(path)+navigation(path,True)+'''</header>
 <main id="main" class="'''+esc(kind)+'''">'''+body+'''</main>
