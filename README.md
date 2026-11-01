@@ -44,7 +44,7 @@ All nine personal blog posts retain their original titles, publication timestamp
 
 - Fonts are self-hosted **Source Sans 3 and Oswald**, with bundled open font licenses. Oswald replaces licensed DIN Condensed Web, so the title lettering is close rather than identical. No Typekit font files or Squarespace runtime are shipped.
 - The unknown-rights question-mark stock photo and publisher screenshot collage are omitted. Article text and press links remain; the optional article thumbnail is a neutral text panel. They can be restored if appropriate rights are confirmed. Other imported images retain their original attribution where present; see [ASSETS.md](docs/ASSETS.md).
-- Seven original external paper downloads were unavailable at backup. Their original targets and recorded statuses are retained on `/reference-links/` and in `content/reference-link-status.json`. They were not retried or silently replaced.
+- Seven original external paper downloads were unavailable at backup. Their original targets and recorded statuses are retained only in maintenance documentation at `content/reference-link-status.json`; original research citations remain unchanged. They were not retried or silently replaced.
 - An existing malformed homepage hyperlink for the Conflict Resolution Center of Montgomery County is preserved as readable text, with no invented replacement target.
 
 See [MIGRATION.md](docs/MIGRATION.md) and [TESTS.md](docs/TESTS.md). Running the checks locally generates `docs/verification.json` and `docs/external-links.csv`; generated reports, screenshots and local editor history are excluded from Git. The publish folder contains no account screenshots, financial/billing data, source caches, credentials, analytics or trackers.
