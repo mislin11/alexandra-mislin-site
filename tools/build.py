@@ -33,6 +33,8 @@ def navigation(active,mobile=False):
  return '<nav class="desktop-navigation" aria-label="Primary navigation">'+links+'</nav>'
 def layout(title,body,path,kind='',description=None,noindex=False,extra_head=''):
  canonical=origin+path;description=description or site['description']
+ # Backup-only annotations stay in maintenance source, never in visitor-facing link tooltips.
+ body=body.replace(' title="Original reference unavailable at the 30 October 2026 backup; see reference link notes"','')
  return '''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>'''+esc(title if path=='/' else title+' — '+site['name'])+'''</title><meta name="description" content="'''+esc(description)+'''">
