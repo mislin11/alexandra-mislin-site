@@ -36,7 +36,6 @@ jobs:
                   count+=1
           assert count==75, count
           archive.unlink()
-          Path('.github/workflows/import-reviewed-source.yml').unlink()
           print('Verified and restored',count,'reviewed source files')
           PY
       - name: Build and validate
@@ -45,6 +44,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A
+          git add -A -- . ':!.github/workflows'
           git commit -m 'Restore complete reviewed academic website source'
           git push origin HEAD:main
