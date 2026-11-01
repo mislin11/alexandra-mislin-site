@@ -1,0 +1,87 @@
+{
+  "home_introduction": {
+    "characters": 1031,
+    "visible_text_sha256": "c48179f94c2ce9128c8d34e0737d24a8961b6ace830dde06c568e6b10730f9ce"
+  },
+  "home_news": {
+    "characters": 25404,
+    "visible_text_sha256": "ae162182767378196a1904cf95c393ed971754e9b14e12ff28dc3d979efb58ea"
+  },
+  "research": {
+    "characters": 7254,
+    "visible_text_sha256": "8e2f371dbb878dd5a2ba236a06344d63b15ccceda50ade5b2719c14c7fe56246"
+  },
+  "teaching": {
+    "characters": 948,
+    "visible_text_sha256": "a3c50bdca20d72bc4f468b56333b9e8a07bd1423c71c7a60ba8b092dfe886528"
+  },
+  "press": {
+    "characters": 1834,
+    "visible_text_sha256": "23c910e0caa72ed891e1a0b25c0f1042ea1a36ed17a9449706899831ebd51057"
+  },
+  "posts": [
+    {
+      "slug": "/workwelldiplomacy/2024/3/18/harnessing-the-power-of-curiosity-in-negotiations-a-game-changer-for-women",
+      "title": "Harnessing the Power of Curiosity in Negotiations: A Game-Changer for Women",
+      "published_at": "2024-03-19T11:38:55.143000+00:00",
+      "body_file": "65f85c4d3f056c750ca4a8b2.html",
+      "visible_text_sha256": "75db59e4bc641397a2684dcb81c3798c183fd195f229925feeb3d0b6c65443a6"
+    },
+    {
+      "slug": "/workwelldiplomacy/2024/3/29/boost-your-negotiation-skills-with-chatgpt",
+      "title": "Boost Your Negotiation Skills with ChatGPT",
+      "published_at": "2024-03-29T16:08:55.873000+00:00",
+      "body_file": "6606e020f61c382891b90d2f.html",
+      "visible_text_sha256": "4e46c5a6a5bacaccdddffabf2d17f544aa248bb07d561fd9c8944de2389e5e30"
+    },
+    {
+      "slug": "/workwelldiplomacy/2024/5/7/what-makes-people-charismatic",
+      "title": "What Makes A Person Charismatic?",
+      "published_at": "2024-05-07T14:28:56.697000+00:00",
+      "body_file": "663a3aae01ee9017bca46903.html",
+      "visible_text_sha256": "dfb552d52f895dcae8bb7101ca14525c30f48a4a76ecabd7fa65344132e129a4"
+    },
+    {
+      "slug": "/workwelldiplomacy/2024/7/9/mastering-self-control-tips-for-young-professionals",
+      "title": "Mastering Self-Control: 5 Tips for Young Professionals",
+      "published_at": "2024-07-09T15:18:17.308000+00:00",
+      "body_file": "668d51294a0e1751cb48c7a1.html",
+      "visible_text_sha256": "a8b4f76e1536c4a45d1e7eddf97830061cb23b67c9312792b969496c84b335cf"
+    },
+    {
+      "slug": "/workwelldiplomacy/2025/1/27/was-that-a-negotiation",
+      "title": "Was That a Negotiation?",
+      "published_at": "2025-01-27T18:33:26.602000+00:00",
+      "body_file": "6797cdccad690d4c5ce5f8ab.html",
+      "visible_text_sha256": "46ce8c60abb94089ba77877c5073bf2e6ca33e0db2b63469d0dc666267e856ed"
+    },
+    {
+      "slug": "/workwelldiplomacy/2025/3/24/when-emotions-cloud-the-bigger-picture",
+      "title": "When Emotions Cloud the Bigger Picture",
+      "published_at": "2025-03-24T15:57:52.161000+00:00",
+      "body_file": "67e17c30b0fc83067d9a82aa.html",
+      "visible_text_sha256": "c220665b1f35be3811f7b53ea5a642a0449b4db222607880d0b652928c027dd4"
+    },
+    {
+      "slug": "/workwelldiplomacy/2025/9/12/do-the-right-next-thing-priorities-that-protect-your-mind",
+      "title": "Do the Right Next Thing: Priorities Protect Your Mind",
+      "published_at": "2025-09-12T14:30:51.585000+00:00",
+      "body_file": "68c42560218bf20e28fa9898.html",
+      "visible_text_sha256": "6f566b4a13eaf3e0d427be972ecb11afc1ceaab86d026ab9acba63f8bb97dcb5"
+    },
+    {
+      "slug": "/workwelldiplomacy/2026/2/20/a-simple-how-to-guide-for-using-ai-in-your-next-negotiation",
+      "title": "AI at Work: A Simple How To Guide for Using AI in Your Next Negotiation",
+      "published_at": "2026-02-20T22:54:48.914000+00:00",
+      "body_file": "69988ad2d9afd7666c023da1.html",
+      "visible_text_sha256": "580d0307907afc73886ebcf98412eb69228313f9a0a319f163b6822be3aec238"
+    },
+    {
+      "slug": "/workwelldiplomacy/map-the-collaboration",
+      "title": "Before You Delegate to AI, Map the Collaboration",
+      "published_at": "2026-04-17T16:16:17.594000+00:00",
+      "body_file": "69e249fc103e9f7bc5201e1b.html",
+      "visible_text_sha256": "97268e80e61550011cf1b668ca69740c18ffee550727c6cf44f428e3d0b59745"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Verification performed
+
+The initial source built with Python 3.9 and no third-party packages. The static checks passed with `--strict-migration` and a running loopback preview: 32 HTML documents (31 routes plus the 404 page), all 26 unique original path stems, 640 internal links, 147 script/style/preload/image references and 56 HTTP route requests. The published runtime has zero external image, font, stylesheet, script or API dependencies. All nine original posts and their publication timestamps passed the migration check. The 152 external citation/professional links are inventoried, not claimed freshly reachable; the seven known failed downloads were not retried.
+
+An independent comparison against the unchanged archive, rather than only the imported baseline, passed for the complete home biography/news, research, teaching, press and all nine full post bodies. Contact's workshop referral is the intentional wording change. The non-editorial Squarespace template guide remains only in the original archive, with its incoming path redirected home.
+
+Browser QA used the supported local browser at 1280px desktop, 390px mobile and 768px tablet widths. The homepage, WorkWell listing, article, research, teaching, press, contact and new speaking page were inspected on desktop. Mobile checks covered the homepage/menu, listing, article, contact and speaking pages: no horizontal overflow, one main heading per page and the images loaded. The native Menu opened all seven links. Three representative original offset/reverse-pagination queries displayed their expected original post titles. Eleven migrated image files decoded successfully. The original backup ZIP checksum remained unchanged.
+
+The authoring utility was tested in a temporary project copy: it created a draft, the build excluded that draft, changing draft to false included it, and the resulting site passed link and content checks. No test article is included in this deliverable.
+
+Screenshots are in `docs/screenshots/`. Machine-readable details are in the adjacent JSON files. Visual comparison used the actual archived Squarespace screenshots; it is close design preservation, not a claim of identical pixels. The licensed title face is deliberately replaced, and two optional third-party images are omitted as documented.
+
+The optional Dockerfile was not run in a container. No Internet deployment, DNS, OAuth or hosting-cost action was tested or performed during the local rebuild. A later authorized private source transfer to GitHub is separate from these tests.
+
+
+## Local editor verification — 31 October 2026
+
+`python3 tools/test_editor.py` passed 17 groups of actual HTTP save/build checks in an isolated temporary copy. Coverage includes rich text/link persistence; add/edit news; grouped multi-paragraph entries; article metadata and stable URLs; unchanged original timestamps and deliberate date corrections; private drafts excluded from public output; CV PDF validation and byte-exact recovery; repeated saves and request idempotency; stale revision rejection; unsafe Host/Origin/token/content-type rejection; script/event/link/path/symlink rejection; failed-build rollback; recoverable undo/redo; and interrupted-save recovery after a restart. After testing, all content and public output were byte-identical to their starting state. See `editor-backend-verification.json`.
+
+Browser verification exercised actual page Save & Preview, bold/link controls, required-title validation without losing article text, private article creation, unsaved draft recovery after a reload, cancellation and Keep editing, news creation, undo through the visible dialog and fresh loads. Test changes were restored, then the content and CV hashes matched the pre-test baseline exactly. The editor was inspected at 1280×900 and 390×844; the mobile layout had no horizontal overflow, and its cancel/discard controls worked. See `editor-ui-verification.json` and the editor screenshots.
+
+The Mac app's actual executable wrapper launched the editor without a Terminal session; subsequent launches reused the same process and URL. The plist, path resolution and executable permissions were checked. The Finder double-click/first-open UI remains unverified because native Computer Use permission is unavailable; no warning was bypassed. The existing port-8766 view-only preview remains separate. The editor binds only 127.0.0.1, and `dist/` contains no editor service, request token, write endpoints or local history. The source ZIP excludes `.local-editor/` entirely.

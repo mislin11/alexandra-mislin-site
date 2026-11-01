@@ -1,0 +1,5 @@
+#!/bin/zsh
+set -eu
+app_dir="$(cd -- "$(dirname -- "$0")" && pwd)"
+project_dir="$(cd -- "$app_dir/../../.." && pwd)"
+exec /usr/bin/python3 "$project_dir/tools/launch_editor.py" "$@"

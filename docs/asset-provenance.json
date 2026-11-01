@@ -1,0 +1,74 @@
+{
+  "/assets/documents/negotiation-medical-professionals-2016.pdf": {
+    "source_url": "https://www.alexandramislin.com/s/1-June-CNMC-Hospital-Grand-Rounds-flyer-Mislin.pdf",
+    "sha256": "c3a5088a35c4f8a43907c3e17fe11ec296164104d9ee0ce1610750bf079f801d",
+    "rights_basis": "Public professional document supplied by the site owner; preserve existing authorship/credits"
+  },
+  "/assets/documents/negotiation-breaking-points-aom-2025.pdf": {
+    "source_url": "https://www.dropbox.com/scl/fi/jw6b8oqcwcg62a1cuvucw/AOM-2025-Presentation-Breaking-Points-FINAL.pdf",
+    "sha256": "90c0f9a24308a150866442cf2fba7bf75521ecf1640b531ea68da526d820b9e4",
+    "rights_basis": "Public professional document supplied by the site owner; preserve existing authorship/credits"
+  },
+  "/assets/documents/mislin-cv-april-2026.pdf": {
+    "source_url": "https://www.dropbox.com/scl/fi/qfevcgv0pikmt8ugo6chv/Mislin-VITA-April-2026-ONLINE.pdf",
+    "sha256": "00cea808b0aff6db34b32ae4b7e5db8b80f5170fea7746bef3f1c5a40348f6c0",
+    "rights_basis": "Public professional document supplied by the site owner; preserve existing authorship/credits"
+  },
+  "/assets/images/alexandra-mislin-portrait.png": {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/892944b1-db7f-4a5a-ab5e-a0fae2d7546e/Mislin+headshot.png",
+    "sha256": "82ea9ed66ae8df2fb974b023ac7aa71ee2ffc7fc868cd97a7d2918c0c2a17dc4",
+    "rights_basis": "Owner-provided professional headshot migrated from her existing public site",
+    "selected_archived_variant": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/892944b1-db7f-4a5a-ab5e-a0fae2d7546e/Mislin+headshot.png?format=750w"
+  },
+  "/assets/images/alexandra-mislin-contact.png": {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/6abc699e-f5f5-4e60-8d04-0e6aa4a2385e/Mislin+headshot.png",
+    "sha256": "a58f13c8af931ea468a8903e2d45d4011a7823d88cd57d9551a904fe323587de",
+    "rights_basis": "Owner-provided professional headshot migrated from her existing public site",
+    "selected_archived_variant": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/6abc699e-f5f5-4e60-8d04-0e6aa4a2385e/Mislin+headshot.png?format=750w"
+  },
+  "/assets/images/workwell-diplomacy-banner.jpg": {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/c49df01c-b258-4438-a442-1ad432d5b8db/WD7.jpg",
+    "sha256": "19659e2ba828f6511092efc176af785c5c787cf34882d86792633e7d09674ba1",
+    "rights_basis": "Author-provided WorkWell Diplomacy title graphic migrated from the existing site"
+  },
+  "/assets/images/christin-hume-hcfwew744z4-unsplash.jpg": {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/4ecaf378-0261-4561-af4b-5cbbd24e1f63/christin-hume-Hcfwew744z4-unsplash.jpg",
+    "sha256": "4fdf0a2d31552da6d2f04d76bd15de9886794d199220f204d2df8ca4a90d221e",
+    "rights_basis": "Unsplash photo; existing credit preserved; https://unsplash.com/license"
+  },
+  "/assets/images/markus-spiske-qozzjpfz2lg-unsplash.jpg": {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/6c9e097a-d5a2-44e7-b946-84fd690492b5/markus-spiske-QozzJpFZ2lg-unsplash.jpg",
+    "sha256": "b4e394b585a4c0e096469eaac95637d6f1618f0277a03a814301b3e07194201d",
+    "rights_basis": "Unsplash photo; existing credit preserved; https://unsplash.com/license"
+  },
+  "/assets/images/arlington-research-kn-kvidcha0-unsplash.jpg": {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/f4efd9f0-c62c-43ac-aca6-9467b864da5b/arlington-research-kN_kViDchA0-unsplash.jpg",
+    "sha256": "1002bd4d427e376140a36fc6f3f58a1b42d1dabf5e2417ecb184b56d952f12ac",
+    "rights_basis": "Unsplash photo; existing credit preserved; https://unsplash.com/license"
+  },
+  "/assets/images/scott-graham-bi8df767i5o-unsplash.jpg": {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/0e683d1c-2771-444b-a3f9-c861df9248a2/scott-graham-bI8df767i5o-unsplash.jpg",
+    "sha256": "459b250746087afa78d22407835892b40ded93b033342e7b4f7f4938a312ce7b",
+    "rights_basis": "Unsplash photo; existing credit preserved; https://unsplash.com/license"
+  },
+  "/assets/images/stressed.jpg": {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/bb990aaf-6fc3-4dc6-a8c7-cb91f5db726b/Stressed.jpg",
+    "sha256": "0c87754560fbeffb09d8ed61c088a1a9b8038165884ed6722b2533d79309c123",
+    "rights_basis": "Unsplash photograph credited to OSPAN ALI in the original article; credit retained; https://unsplash.com/license"
+  },
+  "/assets/images/svitlana-aewjkgwz73u-unsplash.jpg": {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/13a3dbde-4826-484e-bda7-2ac33ee2c2c9/svitlana-AEwJKGwz73U-unsplash.jpg",
+    "sha256": "2b2c50dc087a23b4159b529df5f054c1a64a8756f0d381e12546dd6bdea16685",
+    "rights_basis": "Unsplash photo; existing credit preserved; https://unsplash.com/license"
+  },
+  "/assets/images/zulfugar-karimov-lzmnpignb8-unsplash.jpg": {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/55c5e704-87a5-4dce-ae75-d36c08d03b43/zulfugar-karimov--lZmnpignB8-unsplash.jpg",
+    "sha256": "6da5a1e1d69984dcc1b50fb541bbaa074361a5213c2696da12cd77fc2681b9b1",
+    "rights_basis": "Unsplash photo; existing credit preserved; https://unsplash.com/license"
+  },
+  "/assets/images/ai-human-collaboration-map-image.png": {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/55d9ff91e4b081e9ffd9a43c/466ca934-7d19-4e6b-aae4-b23b10f5dfc9/AI+Human+Collaboration+Map+Image.png",
+    "sha256": "4ea558cdd50df3c5b272d536202a9d7fe5b96f226f930ad1b132bc4c30126542",
+    "rights_basis": "Existing author-provided headshot/graphic"
+  }
+}
