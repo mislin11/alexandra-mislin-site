@@ -54,7 +54,7 @@ def redirect(path,target,reason):
 write('/',site['name'],'<h1 class="visually-hidden">Alexandra Mislin</h1><section class="home-introduction"><aside class="home-portrait"><img src="'+site['portrait']+'" alt="Alexandra Mislin" width="294" height="294" fetchpriority="high">'+read('home-cv')+'</aside><div>'+read('home-introduction')+'</div></section><section class="home-news" aria-labelledby="news-title"><h2 id="news-title">What&#39;s New?</h2>'+read('home-news')+'</section>','home')
 write('/research/','Research','<h1 class="visually-hidden">Research</h1>'+read('research'),'research editorial')
 write('/about/','Teaching','<h1 class="visually-hidden">Teaching</h1>'+read('teaching'),'teaching editorial')
-write('/press/','Press','<div class="side-column-spacer" aria-hidden="true"></div><article class="right-column">'+mainheading(read('press'),'Press')+'</article>','sidebar-layout press')
+write('/press/','Press','<article class="right-column">'+mainheading(read('press'),'Press')+'</article>','post editorial press')
 write('/contact/','Contact','<aside class="contact-portrait"><img src="'+site['contact_portrait']+'" alt="Alexandra Mislin" width="294" height="295"></aside><article class="right-column">'+mainheading(read('contact'),'Contact')+'</article>','sidebar-layout contact')
 write('/speaking-workshops/','Speaking & Workshops',read('speaking-workshops'),'post editorial',description='I give talks and workshops on everyday negotiation, building trust, and gaining influence in complex organizational and social settings.')
 # All published posts retain their original paths and millisecond publication timestamps.
