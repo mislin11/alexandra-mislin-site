@@ -7,3 +7,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .right-column>h1{font-size:28px;margin-bottom:30px}.press .right-column>h1{margin-bottom:11px}
+
+/* Keep Press list entries compact while retaining section-heading spacing. */
+.press .right-column li{margin-bottom:14px}
+.press .right-column li>p{margin:0}
