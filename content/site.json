@@ -29,6 +29,10 @@
       "path": "/press/"
     },
     {
+      "label": "Speaking & Workshops",
+      "path": "/speaking-workshops/"
+    },
+    {
       "label": "Contact",
       "path": "/contact/"
     }
