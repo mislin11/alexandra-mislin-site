@@ -2,7 +2,7 @@
 
 This is a local, GitHub-ready rebuild of Alexandra's personal website. It keeps the white layout, narrow uppercase name, quiet navigation, portrait, text columns and WorkWell Diplomacy article layout close to the verified Squarespace screenshots.
 
-**Live website: [mislin11.github.io/alexandra-mislin-site](https://mislin11.github.io/alexandra-mislin-site/).** [Source repository](https://github.com/mislin11/alexandra-mislin-site). The custom domain has not been connected yet. The original backup remains separate and unchanged.
+**Live website: [www.alexandramislin.com](https://www.alexandramislin.com/).** [Source repository](https://github.com/mislin11/alexandra-mislin-site). GitHub Pages serves the custom domain with automatic HTTPS redirects. The original backup remains separate and unchanged.
 
 ## Open your editor on this Mac
 
