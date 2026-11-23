@@ -29,6 +29,10 @@
       "path": "/press/"
     },
     {
+      "label": "Book",
+      "path": "https://thinkbeforeyouask.com/"
+    },
+    {
       "label": "Speaking & Workshops",
       "path": "/speaking-workshops/"
     },
